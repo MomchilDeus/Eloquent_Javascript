@@ -1,0 +1,7 @@
+function arrayToList(arr){
+  let list = {
+    value : arr.shift(),
+    rest : arrayToList(arr)
+  }
+  return list
+}
